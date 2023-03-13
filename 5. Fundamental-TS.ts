@@ -1,4 +1,4 @@
-// Summation
+// 5.1 Summation
 // Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
 // For example (Input -> Output):
 
@@ -17,7 +17,7 @@ export const summation2 = (num: number) => num * (num + 1) / 2;
 
 // *   *   *   *   *   *   
 
-// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+// 5.2. Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
 // Examples (Input -> Output):
 // * "String"      -> "SSttrriinngg"
@@ -35,7 +35,7 @@ export function doubleChar(str: string): string {
 
 // *   *   *   *   *   *   
 
-// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+// 5.3. Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
 // Examples:
 
@@ -49,3 +49,8 @@ function solution(str: string, ending: string): boolean {
     return str.indexOf(ending) == 0? false : str.split(`${ending}`).at(-1) === "";
   }
 
+// or
+
+function solution(str: string, ending: string): boolean {
+    return str.endsWith(ending);
+  }
